@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "AUX Design System Documentation",
   "colors": {
-    "primary": "#084887",
-    "light": "#084887",
-    "dark": "#CA355A"
+    "primary": "#306B34",
+    "light": "#306B34",
+    "dark": "#306B34"
   },
   "favicon": "/favicon.svg",
   "navigation": {
