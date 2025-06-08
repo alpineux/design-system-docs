@@ -22,7 +22,13 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Variables",
+            "pages": [
+              "variables/design-tokens"
+            ]
+          },
+          {
+            "group": "Components",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -83,7 +89,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:ds@alpineux.com"
       }
     ],
     "primary": {
