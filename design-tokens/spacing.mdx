@@ -1,0 +1,44 @@
+---
+title: "Spacing"
+description: "The spacing token set gives your layouts a consistent rhythm while automatically adapting to different screen sizes. "
+---
+
+### Introduction and Naming Pattern
+
+Each token is named with the prefix `spacing/space-size-` followed by a step number from **1** (smallest) to **8** (largest). The stored value is a CSS `clamp()` function that sets a minimum size in **rem**, a fluid growth factor using **vw**, and a maximum size for very wide viewports.
+
+For example, `spacing/space-size-4` is
+`clamp(0.69rem, 0.65rem + 0.2vw, 0.83rem)`,
+so any margin, padding, or gap that references this token can shrink to 0.69 rem on small screens, scale smoothly as the viewport widens, and stop growing at 0.83 rem.
+
+#### Practical Guidelines
+
+- **Reference tokens, not fixed numbers.** Use `var(--spacing-space-size-5)` (or its style-guide shortcut) instead of hard-coding units. One update adjusts every instance site-wide.
+- **Keep the eight-step scale intact.** Steps 1–8 cover most spacing needs—micro padding to section breaks—without over-thinking new sizes.
+- **Stay responsive by default.** Because every value is a `clamp()`, vertical rhythm remains proportional on phones, tablets, and desktops without extra media queries.
+- **Name new tokens predictably.** If a project truly needs more steps, continue the pattern—`spacing/space-size-9`, `spacing/space-size-10`—using the same `clamp(min, base + vw, max)` format.
+- **Empower beginners.** Clear, numbered names mean even non-technical clients can recognise “space-size-3” versus “space-size-7” when adjusting layouts.
+
+Using this straightforward, fluid scale keeps spacing unified, flexible, and easy for everyone on the project team to understand and maintain.
+
+<Steps>
+  <Step title="Open Variables Tab in Webflow">
+    Create variables under the `Variables` tab, and inside of the `Design Tokens` collection.
+  </Step>
+  <Step title="Create All Variables">
+    Copy and paste each space-size variable below, with the clamp() function as all their variables. The spacing/ prefix will group all of the typography variables together.
+
+    ```css
+    /* Smallest size */
+    spacing/space-size-1: clamp(0.25rem, 0.25rem + 0vw, 0.25rem)
+    spacing/space-size-2: clamp(0.35rem, 0.344rem + 0.03vw, 0.37rem)
+    spacing/space-size-3: clamp(0.49rem, 0.47rem + 0.1vw, 0.56rem)
+    spacing/space-size-4: clamp(0.69rem, 0.65rem + 0.2vw, 0.83rem)
+    spacing/space-size-5: clamp(0.96rem, 0.882rem + 0.39vw, 1.23rem)
+    spacing/space-size-6: clamp(1.34rem, 1.198rem + 0.71vw, 1.84rem)
+    spacing/space-size-7: clamp(1.88rem, 1.634rem + 1.23vw, 2.74rem)
+    spacing/space-size-8: clamp(2.64rem, 2.228rem + 2.06vw, 4.08rem)
+    /* Largest size */
+    ```
+  </Step>
+</Steps>
