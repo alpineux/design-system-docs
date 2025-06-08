@@ -50,6 +50,25 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Scipts",
+        "groups": [
+          {
+            "group": "Helpers",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Variables",
+            "pages": [
+              "variables/design-tokens"
+            ]
+          }
+        ]
       }
     ],
     "global": {
