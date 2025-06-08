@@ -106,13 +106,13 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:ds@alpineux.com"
+        "label": "Hire Us",
+        "href": "mailto:hello@alpineux.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Webflow App",
       "href": "https://dashboard.mintlify.com"
     }
   },
