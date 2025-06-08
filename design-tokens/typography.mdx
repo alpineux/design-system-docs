@@ -1,22 +1,50 @@
 ---
-title: "New file"
-description: "Description of your new file."
+title: "Typography"
+description: "The Typography token set gives you a single source of truth for every heading size, while keeping the values fully responsive out-of-the-box. "
 sidebarTitle: "Typography"
 ---
 
-## Add to Webflow
 
-```bash
-typography/heading-size-h1: clamp(3.18rem, 2.606rem + 2.87vw, 5.19rem)
-typography/heading-size-h2: clamp(2.52rem, 2.174rem + 1.73vw, 3.4013rem)
-typography/heading-size-h3: clamp(2rem, 1.802rem + 0.99vw, 2.5019rem)
-typography/heading-size-h4: clamp(1.59rem, 1.492rem + 0.49vw, 1.8369rem)
-typography/heading-size-h5: clamp(1.26rem, 1.222rem + 0.19vw, 1.3539rem)
-typography/heading-size-h6: clamp(1rem, 1rem + 0vw, 1rem)
-```
+### Introduction and Naming Pattern
 
-```bash
-typography/text-size-large: clamp(1.14rem, 1.106rem + 0.17vw, 1.2277rem)
-typography/text-size-regular: clamp(1rem, 0.986rem + 0.07vw, 1.0367rem)
-typography/text-size-small: clamp(0.875rem, 0.875rem + 0vw, 0.875rem)
-```
+Each token is named with the prefix `typography/heading-size-` followed by the HTML heading level (`h1` through `h6`). The value stored in every token is a CSS `clamp()` expression: the first number is the minimum size in **rem**, the middle term combines a base size with a **vw** multiplier for fluid scaling, and the final number is the maximum size the text will reach on very large screens.
+
+For example, `typography/heading-size-h1` is set to
+`clamp(3.18rem, 2.606rem + 2.87vw, 5.19rem)`,
+which means an **H1** will never shrink below 3.18 rem, will grow proportionally as the viewport widens, and will stop growing once it hits 5.19 rem.
+
+#### Practical Guidelines
+
+- **Use the tokens, not hard-coded values.** Dropping `var(--typography-heading-size-h2)` into a class keeps every page consistent and lets you update all H2 sizes from one place.
+- **Accessibility first.** Because the sizes are defined in `rem`, users who enlarge their base font size for readability will see headings scale up automatically.
+- **Fluid but predictable.** Designers get smooth scaling between breakpoints without custom media queries, and clients with basic CSS knowledge can still read and tweak the values if needed.
+- **Extend if required.** If your project needs additional text styles (e.g., `body-large`, `caption`), follow the same pattern—prefix with `typography/`, use plain words, and store a `clamp()` value.
+
+By keeping the naming scheme consistent and the values self-explanatory, even novice editors can adjust typography confidently, while advanced builders gain the precision and flexibility they need for more complex layouts.
+
+<Steps>
+  <Step title="Open Variables Tab">
+    Create a new Webflow variable under the Variables Tab (V)
+  </Step>
+  <Step title="Create All Variables">
+    Copy and paste each heading-size variable below, with the clamp() function as all their variables. The `typography/` prefix will group all of the typography variables together.
+
+    ```css
+    typography/heading-size-h1: clamp(3.18rem, 2.606rem + 2.87vw, 5.19rem)
+    typography/heading-size-h2: clamp(2.52rem, 2.174rem + 1.73vw, 3.4013rem)
+    typography/heading-size-h3: clamp(2rem, 1.802rem + 0.99vw, 2.5019rem)
+    typography/heading-size-h4: clamp(1.59rem, 1.492rem + 0.49vw, 1.8369rem)
+    typography/heading-size-h5: clamp(1.26rem, 1.222rem + 0.19vw, 1.3539rem)
+    typography/heading-size-h6: clamp(1rem, 1rem + 0vw, 1rem)
+    
+    
+    typography/line-height-ratio: 1.618
+    ```
+
+    ```css
+    typography/text-size-large: clamp(1.14rem, 1.106rem + 0.17vw, 1.2277rem)
+    typography/text-size-regular: clamp(1rem, 0.986rem + 0.07vw, 1.0367rem)
+    typography/text-size-small: clamp(0.875rem, 0.875rem + 0vw, 0.875rem)
+    ```
+  </Step>
+</Steps>
