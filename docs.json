@@ -24,7 +24,7 @@
           {
             "group": "Design Tokens",
             "pages": [
-              "design-tokens/color-scheme.mdx"
+              "design-tokens/color-scheme"
             ]
           },
           {
