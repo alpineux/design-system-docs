@@ -22,7 +22,13 @@
             ]
           },
           {
-            "group": "Variables",
+            "group": "Design Tokens",
+            "pages": [
+              "design-tokens/color-scheme.mdx"
+            ]
+          },
+          {
+            "group": "Variable Collections",
             "pages": [
               "variables/design-tokens"
             ]

@@ -1,17 +1,6 @@
 ---
-title: "Design Tokens"
+title: "Color Scheme"
 ---
-
-Design tokens are the foundational variables that define key visual elements such as colors, font sizes, spacing values, and other style-related properties. These tokens ensure visual consistency across your entire website. The "Design Tokens" collection acts as the primary reference, meaning all other variable collections will rely on this as their single source of truth.
-
-<Info>
-  **Recomended Format**
-
-  Use lowercase letters and dashes only (slug style), e.g.,  <Tooltip tip="Color Hex">brand-red-500</Tooltip> , <Tooltip tip="Size - Clamp() Function">site-margin</Tooltip>,  <Tooltip tip="Size - Clamp() Function">heading-style-1 </Tooltip>
-</Info>
-
-
-## Color Scheme
 
 Add every brand colour to the Design Token collection using either a HEX or RGB value, and label each variable with the simple prefix `color-`, followed by a plain-language hue such as `red` (for example, `color-red-brand`). Avoid descriptive names like “crimson” so non-designers can recognise the palette at a glance. For the primary brand colour, also create one lighter tint and one darker shade, named `color-red-light` and `color-red-dark`. This straightforward, predictable pattern makes it easy for anyone—designer or client—to locate and update colours without guesswork.
 
@@ -29,7 +18,7 @@ This simple, predictable pattern makes it easy for anyone—designer or client�
 
 ### Add to Webflow
 
-Inside of the Design Tokens Variable collection, replace the {COLOR_NAME} text and add the following variables:
+Inside of the Design Tokens Variable collection, replace the COLOR_NAME text and add the following variables:
 
 ```json
 {
