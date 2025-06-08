@@ -4,7 +4,6 @@ description: "The Typography token set gives you a single source of truth for ev
 sidebarTitle: "Typography"
 ---
 
-
 ### Introduction and Naming Pattern
 
 Each token is named with the prefix `typography/heading-size-` followed by the HTML heading level (`h1` through `h6`). The value stored in every token is a CSS `clamp()` expression: the first number is the minimum size in **rem**, the middle term combines a base size with a **vw** multiplier for fluid scaling, and the final number is the maximum size the text will reach on very large screens.
@@ -21,6 +20,8 @@ which means an **H1** will never shrink below 3.18 rem, will grow proportionally
 - **Extend if required.** If your project needs additional text styles (e.g., `body-large`, `caption`), follow the same pattern—prefix with `typography/`, use plain words, and store a `clamp()` value.
 
 By keeping the naming scheme consistent and the values self-explanatory, even novice editors can adjust typography confidently, while advanced builders gain the precision and flexibility they need for more complex layouts.
+
+#### How to use
 
 <Steps>
   <Step title="Open Variables Tab">
@@ -39,6 +40,10 @@ By keeping the naming scheme consistent and the values self-explanatory, even no
     
     
     typography/line-height-ratio: 1.618
+    /* 
+    	Ratio is used to calculate the line height: 
+    	calc(font-size * line-height-ratio)
+    */
     ```
 
     ```css
