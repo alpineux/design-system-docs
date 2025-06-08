@@ -24,7 +24,8 @@
           {
             "group": "Design Tokens",
             "pages": [
-              "design-tokens/color-scheme"
+              "design-tokens/color-scheme",
+              "design-tokens/typography"
             ]
           },
           {
