@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Design System",
         "groups": [
           {
             "group": "Get Started",
@@ -60,7 +60,7 @@
         ]
       },
       {
-        "tab": "Scripts",
+        "tab": "Guides",
         "groups": [
           {
             "group": "Helpers",
