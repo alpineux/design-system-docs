@@ -34,16 +34,16 @@
             "pages": [
               "variables/design-tokens"
             ]
-          }
+          } 
         ]
       },
       {
         "tab": "Components",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Layout",
             "pages": [
-              "api-reference/introduction"
+              "components/layout/grid"
             ]
           },
           {
