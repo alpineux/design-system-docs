@@ -3,7 +3,7 @@
   "theme": "almond",
   "appearance": {
     "default": "dark",
-    "strict": false
+    "strict": true
   },
   "name": "AUX Design System Documentation",
   "colors": {
