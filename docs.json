@@ -114,10 +114,10 @@
         "href": "mailto:hello@alpineux.com"
       }
     ],
-    "dark": {
+    "primary": {
       "type": "button",
-      "label": "Webflow App",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Demo Site",
+      "href": "https://aux-design-system.webflow.io"
     }
   },
   "footer": {
