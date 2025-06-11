@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "AUX Design System Documentation",
   "colors": {
-    "primary": "#2F6B34",
-    "light": "#2F6B34",
-    "dark": "#2F6B34"
+    "primary": "#FCFF33",
+    "light": "#FCFF33",
+    "dark": "#FCFF33"
   },
   "favicon": "/favicon.svg",
   "navigation": {
