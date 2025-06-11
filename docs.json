@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "AUX Design System Documentation",
   "colors": {
     "primary": "#FCFF33",
