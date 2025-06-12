@@ -64,6 +64,25 @@
         ]
       },
       {
+        "tab": "Scripts",
+        "groups": [
+          {
+            "group": "Helpers",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Variables",
+            "pages": [
+              "variables/design-tokens"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Guides",
         "groups": [
           {
